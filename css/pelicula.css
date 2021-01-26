@@ -1,0 +1,65 @@
+body {
+  margin: 0 auto;
+  width: 992px;
+  background-color: #010500;
+  font-family: "Montserrat", sans-serif;
+  color: wheat;
+}
+nav {
+  margin-top: 5%;
+  text-align: center;
+}
+hr {
+  border-color: black;
+}
+#imgBanner {
+  height: 500px;
+}
+#contenido {
+  display: flex;
+}
+.imgSVG {
+  width: 40px;
+}
+#contenido > .bloques {
+  background-color: #2B2D2A;
+  margin: 10px;
+  padding: 20px;
+  text-align: justify;
+
+}
+audio {
+  width: 100%;
+}
+#trailer {
+  background-color: #2B2D2A;
+}
+h4 {
+  padding-top: 5%;
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+/* 4 estados de los enlaces */
+a:link {
+  color: #CEB5A7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #CEB5A7;
+}
+
+a:active {
+  color: #EBEFBF;
+}
+
+a:hover {
+  color: #92828D;
+}
+/*# sourceMappingURL=pelicula.css.map */

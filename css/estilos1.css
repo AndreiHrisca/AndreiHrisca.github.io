@@ -1,0 +1,42 @@
+@charset "utf-8";
+* {
+    /* Pones los estilos generales de la página */
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: chartreuse;
+}
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    color: aqua;
+    align-self: center;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: blueviolet;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2em;
+}
+
+/* Definir siempre los 4 estados del enlace */
+a:link {
+    color: yellow;
+}
+a:visited {
+    color: blueviolet;
+}
+a:hover{
+    color: turquoise;
+}
+a:active {
+    color: brown;
+}

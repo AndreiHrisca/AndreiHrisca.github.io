@@ -1,0 +1,29 @@
+body {
+  background-color: #FFC971;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+  padding-top: 20px;
+}
+
+a:link {
+  color: #0f0f0f;
+  text-decoration: none;
+  
+}
+
+a:visited {
+  color: #CEB5A7;
+}
+
+a:active {
+  color: #EBEFBF;
+}
+
+a:hover {
+  color: #92828D;
+}
+/*# sourceMappingURL=estilosGenerales.css.map */

@@ -1,0 +1,34 @@
+body {
+    margin: 0 auto;
+    width: 992px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #79a3b1;
+}
+hr {
+    border-color: black;
+}
+nav, h1, h2 {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* 4 estados de los enlaces */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: #153e90;
+}
+a:hover {
+    color: #153e90;
+}

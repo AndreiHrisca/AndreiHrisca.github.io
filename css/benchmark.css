@@ -1,0 +1,87 @@
+body {
+  margin: 0 auto;
+  background-color: #F5F5FB;
+  width: 992px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  margin-top: 5%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #877979;
+}
+
+h2 {
+  margin-left: 3%;
+}
+
+li {
+  list-style: none;
+}
+
+meter {
+  width: 100px;
+  height: 50px;
+}
+
+#ContenedorValores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ContenedorValores > .TituloValores {
+  background-color: #DFE3F1;
+  border-radius: 20px;
+  margin: 10px;
+  width: 400px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 100%;
+  color: #877979;
+}
+
+#ContenedorDatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ContenedorDatos > div {
+  background-color: #DFE3F1;
+  margin: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 100%;
+  border-radius: 20px;
+  color: #877979;
+}
+
+a:link {
+  text-decoration: none;
+  color: #6d6875;
+}
+
+a:visited {
+  color: #6d6875;
+}
+
+a:hover {
+  color: #b5838d;
+}
+
+a:active {
+  color: #b5838d;
+}
+/*# sourceMappingURL=benchmark.css.map */

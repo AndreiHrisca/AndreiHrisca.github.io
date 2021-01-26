@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de contacto</title>
+	<meta name="title" content="Formulario de datos personales">
+	<meta name="description" content="Formulario para la petición de datos para el contacto.">
+    <meta name="keywords" content="datos personales, contacto">
+    <meta name="author" content="Andrei Ionut Hrisca">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" sizes="16x16" type="image/ico">
+    <link rel="stylesheet" href="../../css/loginRegistro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!--Enlaces a las/las hojas de estilo necesarias-->
+	<!--<link rel="stylesheet" type="text/css" href="/css/comun.css" /> -->
+	</head>
+
+<body>
+	<div id="ContenedorForm">
+		<h2>Formulario de contacto</h2>
+		<p>Es obligatorio completar todos los campos.</p>
+		
+		<form action="enviar.php" method="post">
+			
+			<div class="form-group">
+				<!--<label for="nombre">Nombre</label>-->
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre persona o de la empresa.." maxlength="20" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" required autofocus title="Sólo números y letras con una longitud máxima de 20 caracterees incluidos espacios en blanco">
+				<!-- Capa oculta -->
+			</div>
+			
+			<div class="form-group">
+				<!--<label for="nrtelefono">Numero de telefono</label>-->
+				<input type="tel" name="nrtelefono" id="nrtelefono" pattern="[+]{1}[0-9]{11}" placeholder="Telefono: +34111222333" required autofocus title="Caracteres de 0 a 9, longitud 12 digitos, ej: +34111222333" maxlength="12">
+				<!-- Capa oculta -->
+			</div>
+			
+			<div class="form-group">
+				<!--<label for="mail">Correo electrónico</label>-->
+				<input type="email" name="mail" id="mail" placeholder="ejemplo@mail.com" required autofocus title="Correo electrónico para que pueda contactarte.">
+				<!-- Capa oculta -->
+			</div>
+			
+			<div class="form-group" id="textarea">
+				<!--<label for="comment">Comentario</label>-->
+				<textarea placeholder="Dejame aqui un comentario o las preguntas que tienes..."rows="4" cols="50" name="comment" form="usrform"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" id="enviar" value="ENVIAR">
+			</div>
+			
+		</form>
+	</div>
+</body>
+
+</html>

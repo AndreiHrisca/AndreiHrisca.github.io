@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head lang="es">
+<meta charset="UTF-8">
+    <meta name="description" content="Aprendiendo html.">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Andrei Ionut Hrisca">
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos8.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" sizes="16x16" type="image/ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <hr>
+    <nav>
+      <a href="Ej8_tablas.html">Anterior</a>
+      <a href="../index.php">| Principal |</a>
+      <a href="Ej11_iframes.html">Siguiente</a>
+    </nav>
+    <hr>
+    
+    <h1 id="inicio">Formularios</h1>
+    <hr>
+      <table> 
+        <form action="mailto:aihrisca@alumnos.imf.com" name="Form" method="POST" enctype="text/plain">
+          <tr>
+            <td>
+              <label for="Nombre">
+                <h3>Nombre</h3>
+              </label>
+              <input maxlength="30" minlength="3" type="text" value="" name="Nombre">
+              <label for="apellidos">
+                <h3>Apellidos</h3>
+              </label>
+              <input maxlength="80" minlength="3" type="text" value="" name="Apellidos">
+              <label for="dni">
+                <h3>DNI</h3>
+              </label>
+              <input type="text" maxlength="10" value="" name="DNI">
+            </td>
+
+            <td>
+              <label for="Sexo"><h3>Sexo</h3></label>
+              
+              <input type="radio" required value="hombre" name="Sexo"><label for="hombre">Hombre</label>
+              
+              <input type="radio" value="mujer" name="sexo"><label for="mujer">Mujer</label>
+              
+              <label for="Pais"><h3>País</h3></label>
+              <select required name="Pais" id="paises">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Rumania">Rumania</option>
+              </select>
+
+
+              <label for="Trabajo">
+                <h3>Trabajos: </h3>
+              </label>    
+              <select name="Trabajo" id="work-select" size="5" multiple>
+                <option value="Desarrollo software">Desarrollo software</option>
+                <option value="Policia">Policia</option>
+                <option value="Piloto">Piloto</option>
+                <option value="Cocinero">Cocinero</option>
+                <option value="Juez">Juez</option>
+                <option value="Arquitecto">Arquitecto</option>
+              </select>
+    
+    
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="boletin" unchecked> <label for="boletin">Interesado/a en recibir spam</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <form action="Ej9_formularios.html" method="POST" name="Form">
+                <button value="enviar" type="submit">Enviar</button>
+                <button type="reset" value="borrar">Borrar</button>
+    
+            </td>
+          </tr>
+        </form>
+      </table>
+    
+      <hr>
+    <a href="#inicio">SUBIR</a>
+
+</body>
+</html>

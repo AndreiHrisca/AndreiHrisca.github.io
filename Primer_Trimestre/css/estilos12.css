@@ -1,0 +1,68 @@
+body {
+    margin: 0 auto;
+    width: 992px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #79a3b1;
+}
+hr {
+    border-color: black;
+}
+nav {
+    text-align: center;
+}
+marquee {
+    width: 992px;
+    animation-direction: alternate;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+#imgBanner {
+    width: 100%;
+}
+table {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 990px;
+}
+td {
+    width: 50%;
+}
+#td_der {
+   padding-left: 40px;
+   text-align: justify;
+}
+audio {
+    width: 100%;
+}
+#trailer {
+    background-color: whitesmoke;
+}
+h4 {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    height: 315px;
+}
+
+
+
+
+
+/* 4 estados de los enlaces */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: #153e90;
+}
+a:hover {
+    color: #153e90;
+}

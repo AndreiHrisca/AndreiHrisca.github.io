@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<clase>
+    <profesor>Alfredo</profesor>
+    <alumnos>
+        <alumno>Andrei</alumno>
+        <alumno>Manuel</alumno>
+        <alumno>Gonzalo</alumno>
+        <alumno>Cesar</alumno>
+        <alumno>David</alumno>
+        <alumno>Laura</alumno>
+        <alumno>Sebastian</alumno>
+    </alumnos>
+</clase>

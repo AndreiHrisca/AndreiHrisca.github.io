@@ -1,0 +1,82 @@
+$Fonts : "Montserrat", sans-serif;
+
+body {
+    font-family: $Fonts;
+    font-size: 18px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    width: 992px;
+    margin: 0 auto;
+}
+
+#ContenedorForm {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(73, 76, 114, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+}
+p {
+    width: 400px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > div {
+    margin: 10px;
+    text-align: center;
+    line-height: 45px;
+}
+input{
+    margin-top: 20px;
+    outline: 0;
+    width: 35%;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+}
+input[type=submit] {
+    margin-top: 20px;
+    text-transform: uppercase;
+    outline: 0;
+    background: #96bb7c;
+    width: 40%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+input[type=submit]:hover,.form input[type=submit]:active,.form input[type=submit]:focus {
+    background: #d6efc7;
+  }
+a:link {
+    text-decoration: none;
+    color: #6d6875;
+  }
+  
+  a:visited {
+    color: #6d6875;
+  }
+  
+  a:hover {
+    color: #b5838d;
+  }
+  
+  a:active {
+    color: #b5838d;
+  }
