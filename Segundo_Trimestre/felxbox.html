@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'>
+<title>Flexbox</title>
+<meta name='description' content='Flexbox en páginas web.'>
+<meta name='keywords' content='Flexbox, html'>
+<meta name='author' content='Andrei Ionut Hrisca'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='shortcut icon' href='#' sizes='16x16' type='image/ico'>
+<link rel='stylesheet' href='#'>
+<style>
+   body {
+       width: 992px;
+       text-align: center;
+       margin: 0 auto;
+   }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex: 50%;
+        width: 400px;
+    }
+
+    .box2 {
+        flex: 50%;
+    }
+
+    img {
+        border-radius: 20px;
+        margin: 10px 0 10px;
+    }
+</style>
+</head>
+<body>
+    <h2>Fotografias</h2>
+    <main>
+        <div class="box">
+            <img src="https://source.unsplash.com/75EFpyXu3Wg/405x288/" alt="">
+            <span>Fotografia 1</span>
+        </div>
+
+        <div class="box">
+            <img src="https://source.unsplash.com/CuEvrPd3NYc/402x288/" alt="">
+            <span>Fotografia 1</span>
+        </div>
+
+        <div class="box2">
+            <img src="https://source.unsplash.com/-HxIhfS_dUk/406x288/" alt="">
+            <span>Fotografia 1</span>
+        </div>
+
+        <div class="box2">
+            <img src="https://source.unsplash.com/ruJm3dBXCqw/403x288/" alt="">
+            <span>Fotografia 1</span>
+        </div>
+    </main>
+</body>
+</html>

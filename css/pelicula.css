@@ -9,6 +9,11 @@ nav {
   margin-top: 5%;
   text-align: center;
 }
+
+p{
+  width: 70%;
+}
+
 hr {
   border-color: black;
 }
@@ -29,10 +34,12 @@ hr {
 
 }
 audio {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 20px;
 }
 #trailer {
   background-color: #2B2D2A;
+  margin-bottom: 20px;
 }
 h4 {
   padding-top: 5%;
