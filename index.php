@@ -69,7 +69,8 @@
     <div class="contenedor">
 
       <h2>Andrei Website</h2>
-      
+      <a class="hoverable" href="./Segundo_Trimestre/felxbox.html">Flex & Semantica</a>
+
       <a class="hoverable" href="./registro.php">Probando sesión</a>
 
       <a class="hoverable" href="./Segundo_Trimestre/formulario/datos-personales-enviophp.html" target="_blank">Contacto</a>
@@ -82,6 +83,7 @@
 
       <a class="hoverable" href="./Primer_Trimestre/Ej1_texto.html">Vintage</a>
 
+      
     </div>
 
 

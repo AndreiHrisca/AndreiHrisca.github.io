@@ -2,61 +2,82 @@
 <html lang='es'>
 <head>
 <meta charset='UTF-8'>
-<title>Flexbox</title>
+<title>Flexbox & Semantica</title>
 <meta name='description' content='Flexbox en páginas web.'>
 <meta name='keywords' content='Flexbox, html'>
 <meta name='author' content='Andrei Ionut Hrisca'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<link rel='shortcut icon' href='#' sizes='16x16' type='image/ico'>
-<link rel='stylesheet' href='#'>
+<link rel='shortcut icon' href='../assets/img/favicon.ico' sizes='16x16' type='image/ico'>
+<!--<link rel='stylesheet' href='#'>-->
 <style>
-   body {
-       width: 992px;
-       text-align: center;
-       margin: 0 auto;
+   
+   main {
+        max-width: 992px;
+        margin: 0 auto;
+        text-align: center;
    }
-    main {
+   
+    section {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        
     }
 
-    .box {
-        flex: 50%;
-        width: 400px;
-    }
+    /* Hacer que las cajas floten */
 
-    .box2 {
-        flex: 50%;
+    figure > img {
+        height: 300px;
+        width: 300px;
     }
-
-    img {
-        border-radius: 20px;
-        margin: 10px 0 10px;
-    }
+    
 </style>
 </head>
 <body>
-    <h2>Fotografias</h2>
     <main>
-        <div class="box">
-            <img src="https://source.unsplash.com/75EFpyXu3Wg/405x288/" alt="">
-            <span>Fotografia 1</span>
-        </div>
+        <header>
+            <nav>
+                <a href="benchmark.php">Anterior</a>
+                <a href="../index.php">| Principal |</a>
+                <a href="guiaDisenoExamen.html">Siguiente</a>
+            </nav>
+            <h2>Warcraft Art concept</h2>
+        </header>
 
-        <div class="box">
-            <img src="https://source.unsplash.com/CuEvrPd3NYc/402x288/" alt="">
-            <span>Fotografia 1</span>
-        </div>
+        <section>     
+            <article class="box">
+                <figure>
+                    <img src="https://source.unsplash.com/CuEvrPd3NYc" alt="">
+                    <figcaption>Fotografia 1</figcaption>
+                </figure>
+            </article>
 
-        <div class="box2">
-            <img src="https://source.unsplash.com/-HxIhfS_dUk/406x288/" alt="">
-            <span>Fotografia 1</span>
-        </div>
+            <article class="box">
+                <figure>
+                    <img src="https://source.unsplash.com/CuEvrPd3NYc" alt="">
+                    <figcaption>Fotografia 2</figcaption>
+                </figure>
+            </article>
 
-        <div class="box2">
-            <img src="https://source.unsplash.com/ruJm3dBXCqw/403x288/" alt="">
-            <span>Fotografia 1</span>
-        </div>
+            <article class="box">
+                <figure>
+                    <img src="https://source.unsplash.com/CuEvrPd3NYc" alt="">
+                    <figcaption>Fotografia 3</figcaption>
+                </figure>
+            </article>
+
+            <article class="box">
+                <figure>
+                    <img src="https://source.unsplash.com/CuEvrPd3NYc" alt="">
+                    <figcaption>Fotografia 4</figcaption>
+                </figure>
+                
+            </article>
+        </section>
+
+        <footer>
+            Esto es un footer
+        </footer>
     </main>
 </body>
 </html>
