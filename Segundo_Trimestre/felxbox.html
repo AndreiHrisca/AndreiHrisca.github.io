@@ -8,9 +8,21 @@
 <meta name='author' content='Andrei Ionut Hrisca'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <link rel='shortcut icon' href='../assets/img/favicon.ico' sizes='16x16' type='image/ico'>
-<!--<link rel='stylesheet' href='#'>-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <style>
-   
+   body {
+    background-color: #e5e5e5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23292829' fill-opacity='0.21'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Montserrat', sans-serif;
+   }
+
+   header {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+   }
    main {
         max-width: 992px;
         margin: 0 auto;
@@ -23,14 +35,36 @@
         flex-wrap: wrap;
         
     }
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
     a:hover {
-        /* efecto de saltar */
+        background-color: rgba(200, 255, 255, 0.5);
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+    a:active{
+        color: grey;
+    }
+    figure:hover {
+        background-color:rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
     }
 
     /* Hacer que las cajas floten */
 
     figure > img {
         width: 260px;
+    }
+
+    footer{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     
 </style>
@@ -41,7 +75,7 @@
             <nav>
                 <a href="benchmark.php">Anterior</a>
                 <a href="../index.php">| Principal |</a>
-                <a href="guiaDisenoExamen.html">Siguiente</a>
+                <a href="Pelicula_con_scss.html">Siguiente</a>
             </nav>
             <h2>Warcraft Art concept</h2>
         </header>
@@ -50,8 +84,8 @@
             <article class="box">
                 <a href="">
                     <figure>
-                        <img src="../assets/img/wow/wow1.JPG" alt="">
-                        <figcaption>Boceto casa de Gilneas</figcaption>
+                        <img src="../assets/img/wow/wow1.png" alt="">
+                        <figcaption>Gilneas tavern</figcaption>
                     </figure>
                 </a>
             </article>
@@ -59,8 +93,8 @@
             <article class="box">
                 <a href="">
                     <figure>
-                        <img src="../assets/img/wow/wow2.JPG" alt="">
-                        <figcaption>Fotografia 2</figcaption>
+                        <img src="../assets/img/wow/wow2.png" alt="">
+                        <figcaption>Gilneas house sketch</figcaption>
                     </figure>
                 </a>
             </article>
@@ -68,8 +102,8 @@
             <article class="box">
                 <a href="">
                     <figure>
-                        <img src="../assets/img/wow/wow3.JPG" alt="">
-                        <figcaption>Fotografia 3</figcaption>
+                        <img src="../assets/img/wow/wow3.png" alt="">
+                        <figcaption>Gilneas city</figcaption>
                     </figure>
                 </a>
             </article>
@@ -77,15 +111,16 @@
             <article class="box">
                 <a href="">
                     <figure>
-                        <img src="../assets/img/wow/wow4.JPG" alt="">
-                        <figcaption>Fotografia 4</figcaption>
+                        <img src="../assets/img/wow/wow4.png" alt="">
+                        <figcaption>Gilneas house</figcaption>
                     </figure>
                 </a>
             </article>
         </section>
 
         <footer>
-            Esto es un footer
+            <p>Trabajando flexbox y la semantica.</p>
+            <a href="./formulario/datos-personales-enviophp.html" target="_blank">Contacto</a>
         </footer>
     </main>
 </body>
