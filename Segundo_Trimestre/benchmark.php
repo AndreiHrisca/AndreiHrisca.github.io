@@ -94,7 +94,7 @@ echo '
 
         <a href="../index.php">| Principal |</a>
 
-        <a href="flexbox.html">Siguiente</a>
+        <a href="felxbox.html">Siguiente</a>
 
     </nav>
 
