@@ -1,63 +1,145 @@
+/* Set the background color of body to tan */
 body {
-    margin: 0 auto;
-    max-width: 992px;
+    background-color: tan;
+    max-width: 600px;
+  }
+  
+main {
+  font-family: 'Montserrat', sans-serif;
 }
 
-/*  Apartados generales  */
+/* HEADER -----------------------------------------------*/
 header {
-    width: 90%;
-    margin-top: 3rem;
-    
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0 20px;
 }
-
-section {
-    max-width: 90%;
-    margin: 3rem auto;
-
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    
-}
-
-footer {
-    width: 100%;
-    margin-top: 3rem;
-    text-align: center;
-}
-
-/* Orden articulos */
-
 
 header > picture > img {
-    max-width: 200px;
-}
-
-
-section article {
-    max-width: 80%;
-    margin: 10px auto;
-    border: 1px solid black;
-    border-radius: 5px;
+  max-width: 300px;
 }
 
 
 
+/* SECTION -----------------------------------------------*/
+section {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 20px auto;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+article {
+  margin: 30px 20px;
+  max-width: 200px;
+  background: #f6ecf0;
+  border-radius: 10px;
+}
+article > picture > img {
+  max-width: 200px;
+}
+figcaption {
+  text-align: center;
+  max-width: 200px;
+  padding: 10px 10px 20px 10px;
+ 
+}
 
 
-@media (max-width: 800px) {
-    section {
-      flex-direction: column;
+/* FOOTER -----------------------------------------------*/
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background: white;
+  padding-top: 20px;
+  
+}
+
+
+/* Estados de los enlaces */
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+article:hover {
+  background: grey;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* Para Tablet*/
+@media (min-width: 768px) {
+    body {
+        background-color: yellow;
+        max-width: 800px;
     }
-    header > picture > img {
-        max-width: 300px;
+   
+    
+}
+
+  /* Para Laptop Normal*/
+@media (min-width: 992px) {
+    body {
+      background-color: blue;
+      max-width: 992px;
+      margin: 0 auto;
+    }
+}
+
+
+  /* Para Laptop Largo*/
+  @media (min-width: 1400px) {
+    body {
+      background-color: #cd5d7d;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     header {
-        flex-direction: column;
-        font-size: 28px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
     }
-  }
+
+    header > picture > img {
+      max-width: 200px;
+    }
+
+    header > picture {
+      padding: 0px 20px 0px 20px;
+    }
+    header > h2 {
+      padding: 0px 20px 0px 20px;
+    }
+    
+}
+  
+  
+
