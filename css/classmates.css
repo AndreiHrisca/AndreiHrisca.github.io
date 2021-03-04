@@ -85,17 +85,12 @@ article:hover {
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 a:active {
   color: black;
 }
-
-
-
-
-
 
 
 
@@ -124,7 +119,7 @@ a:active {
   /* Para Laptop Largo*/
   @media (min-width: 1400px) {
     body {
-      background-color: white;
+      background: white;
       max-width: 1200px;
       margin: 0 auto;
     }
