@@ -3,14 +3,85 @@ body {
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    &.dark {
+        background: #292929;
+        color: #f8f8f8;
+    }
 }
+
 
 header {
+    transition: .5s ease all;
     text-align: center;
 }
+nav {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 350px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s ease all;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    body.dark & {
+        background: #414141;
+    }
+}
+
+
+/* ----- ----- ----- ----- SWITCH ----- ----- ----- ----- */
+.switch {
+    background: grey;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+        body.dark & {
+            background: lightgrey;
+        }
+    }
+    &.active {
+        background: orange;
+        color: black;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 25px;
+        height: 20px;
+        line-height: 1px;
+        display: block;
+        background: none;
+        color: #fff;
+        
+    }
+
+}
+
 
 p {
-    width: 350px;
+    transition: .5s ease all;
+    width: 80%;
     text-align: justify;
     margin: 0 auto;
     background: white;
@@ -18,19 +89,28 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
     padding: 40px;
+    
+    body.dark & {
+        background: #414141;
+        color: #f8f8f8;
+    }
 }
 
 img {
+    border-radius: 4px;
     width: 250px; 
 }
 
 section {
+    transition: .5s ease all;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 article {
+    transition: .5s ease all;
     display: inline-block;
     width: 350px;
     padding: 40px;
@@ -41,33 +121,58 @@ article {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
+    
+    body.dark & {
+        background: #414141;
+        color: #f8f8f8;
+    }
+}   
 
 footer {
+    transition: .5s ease all;
     margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 100%;
     background: white;
     text-align: center;
+    border-radius: 4px;
+    
+    body.dark & {
+        background: #414141;
+        color: #f8f8f8;
+    }
 }
 
 
 a:link {
     text-decoration: none;
     color: black;
+    
+    body.dark & {
+        color: #f8f8f8;
+    }
 }
 
 a:active {
     color: black;
+    body.dark & {
+        color: #f8f8f8;
+    }
 }
 
 a:visited {
     color: black;
+    body.dark & {
+        color: #f8f8f8;
+    }
 }
 
 a:hover {
     color: lightsteelblue;
+    body.dark & {
+        color: lightblue;
+    }
 }
 
 span {
@@ -84,8 +189,17 @@ span {
         background: #f8f8f8;
         max-width: 768px;
         margin: 0 auto;
+        body.dark & {
+            background: darkcyan;
+            box-shadow: #f1f1f1;
+        }
     }
     
+    nav {
+        width: 640px;
+        margin: 30px auto;
+    }
+
     article {
         display: inline-block;
         width: 300px;
@@ -98,6 +212,7 @@ span {
     p {
         width: 640px;
     }
+    
 }
 
   /* Para Laptop Normal*/
@@ -106,7 +221,17 @@ span {
         background: #f8f8f8;
         max-width: 992px;
         margin: 0 auto;
+        body.dark & {
+            background: darkcyan;
+            box-shadow: #f1f1f1;
+        }
     }
+
+    nav {
+        width: 840px;
+        margin: 30px auto;
+    }
+
     article {
         display: inline-block;
         width: 250px;
@@ -120,6 +245,7 @@ span {
     p {
         width: 840px;
     }
+    
 }
 
 
@@ -129,9 +255,23 @@ span {
         background: #f8f8f8;
         max-width: 1400px;
         margin: 0 auto;
-    }
-    p {
-        width: 100%;
+        body.dark & {
+            background: darkcyan;
+            box-shadow: #f1f1f1;
+        }
     }
 
-}
+    nav {
+        width: 1120px;
+        margin: 30px auto;
+    }
+
+    p {
+        width: 1120px;
+    }
+    footer {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+  }

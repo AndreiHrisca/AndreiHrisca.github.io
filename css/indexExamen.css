@@ -5,12 +5,99 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body.dark {
+  background: #292929;
+  color: #f8f8f8;
+}
+
 header {
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
   text-align: center;
 }
 
-p {
+nav {
+  background: white;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   width: 350px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body.dark nav {
+  background: #414141;
+}
+
+/* ----- ----- ----- ----- SWITCH ----- ----- ----- ----- */
+.switch {
+  background: grey;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .switch::after {
+  background: lightgrey;
+}
+
+.switch.active {
+  background: orange;
+  color: black;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 25px;
+  height: 20px;
+  line-height: 1px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+p {
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+  width: 80%;
   text-align: justify;
   margin: 0 auto;
   background: white;
@@ -22,11 +109,19 @@ p {
   padding: 40px;
 }
 
+body.dark p {
+  background: #414141;
+  color: #f8f8f8;
+}
+
 img {
+  border-radius: 4px;
   width: 250px;
 }
 
 section {
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,6 +133,8 @@ section {
 }
 
 article {
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
   display: inline-block;
   width: 350px;
   padding: 40px;
@@ -52,13 +149,26 @@ article {
   text-align: center;
 }
 
+body.dark article {
+  background: #414141;
+  color: #f8f8f8;
+}
+
 footer {
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
   margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
   background: white;
   text-align: center;
+  border-radius: 4px;
+}
+
+body.dark footer {
+  background: #414141;
+  color: #f8f8f8;
 }
 
 a:link {
@@ -66,16 +176,32 @@ a:link {
   color: black;
 }
 
+body.dark a:link {
+  color: #f8f8f8;
+}
+
 a:active {
   color: black;
+}
+
+body.dark a:active {
+  color: #f8f8f8;
 }
 
 a:visited {
   color: black;
 }
 
+body.dark a:visited {
+  color: #f8f8f8;
+}
+
 a:hover {
   color: lightsteelblue;
+}
+
+body.dark a:hover {
+  color: lightblue;
 }
 
 span {
@@ -95,6 +221,15 @@ span {
     background: #f8f8f8;
     max-width: 768px;
     margin: 0 auto;
+  }
+  body.dark body {
+    background: darkcyan;
+    -webkit-box-shadow: #f1f1f1;
+            box-shadow: #f1f1f1;
+  }
+  nav {
+    width: 640px;
+    margin: 30px auto;
   }
   article {
     display: inline-block;
@@ -117,6 +252,15 @@ span {
     max-width: 992px;
     margin: 0 auto;
   }
+  body.dark body {
+    background: darkcyan;
+    -webkit-box-shadow: #f1f1f1;
+            box-shadow: #f1f1f1;
+  }
+  nav {
+    width: 840px;
+    margin: 30px auto;
+  }
   article {
     display: inline-block;
     width: 250px;
@@ -138,8 +282,21 @@ span {
     max-width: 1400px;
     margin: 0 auto;
   }
+  body.dark body {
+    background: darkcyan;
+    -webkit-box-shadow: #f1f1f1;
+            box-shadow: #f1f1f1;
+  }
+  nav {
+    width: 1120px;
+    margin: 30px auto;
+  }
   p {
-    width: 100%;
+    width: 1120px;
+  }
+  footer {
+    width: 1120px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=indexExamen.css.map */
